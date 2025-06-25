@@ -25,4 +25,5 @@ return require('packer').startup(function(use)
 
     -- Иконки в автодополнении (опционально)
     use 'onsails/lspkind.nvim'
+    use 'nvim-treesitter/nvim-treesitter'
 end)
