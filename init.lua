@@ -10,18 +10,9 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 10
 
+vim.opt.signcolumn = "yes"
+vim.opt.swapfile = false
+vim.opt.backup = false
+
 require ("core.mappings")
 require ("core.packer_config")
-
-vim.cmd("colorscheme lushtheme")
-
-vim.api.nvim_create_autocmd('FileType', {
-    pattern = { '*' },
-    callback = function()
-	vim.lsp.start({
-	    name = 'lsp-server',
-	    cmd = { 'ccls' },
-	    root_dir = vim.fn.getcwd()
-	})
-    end
-})

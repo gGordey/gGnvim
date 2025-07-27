@@ -13,9 +13,8 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 
 vim.keymap.set("n", "<leader>lp", vim.cmd.Ex)
 
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-    pattern = "*",
-    callback = function()
-        vim.cmd("LspRestart")
-    end
-})
+-- vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+-- 	callback = function()
+-- 		vim.cmd("LspStop")
+-- 	end
+-- })
