@@ -22,9 +22,9 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip' 
 
-    use 'onsails/lspkind.nvim'
-	
-    use 'nvim-treesitter/nvim-treesitter'
+	use 'onsails/lspkind.nvim'
+
+	use 'nvim-treesitter/nvim-treesitter'
 	use {
 		"startup-nvim/startup.nvim",
 		requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "nvim-telescope/telescope-file-browser.nvim"},
@@ -32,8 +32,42 @@ return require('packer').startup(function(use)
 			require"startup".setup(require"plugins.startup")
 		end
 	}
-    use 'nvim-lua/plenary.nvim'
-    use 'ThePrimeagen/harpoon'
-	
+	use 'nvim-lua/plenary.nvim'
+	use 'ThePrimeagen/harpoon'
+
 	use 'mbbill/undotree'
+	use {
+		'swaits/scratch.nvim',
+		config = function()
+			require("scratch").setup()
+		end
+	}
+	use {
+		'brenton-leighton/multiple-cursors.nvim',
+		tag = '*', -- Используем последнюю версию
+		config = function()
+			local mc = require('multiple-cursors')
+			mc.setup({}) -- Пустые опции, как в оригинале
+
+			-- Установка key mappings
+			vim.keymap.set({'n', 'x'}, '<C-j>', '<Cmd>MultipleCursorsAddDown<CR>', {desc = 'Add cursor and move down'})
+			vim.keymap.set({'n', 'x'}, '<C-k>', '<Cmd>MultipleCursorsAddUp<CR>', {desc = 'Add cursor and move up'})
+
+			vim.keymap.set({'n', 'i', 'x'}, '<C-Up>', '<Cmd>MultipleCursorsAddUp<CR>', {desc = 'Add cursor and move up'})
+			vim.keymap.set({'n', 'i', 'x'}, '<C-Down>', '<Cmd>MultipleCursorsAddDown<CR>', {desc = 'Add cursor and move down'})
+
+			vim.keymap.set({'n', 'i'}, '<C-LeftMouse>', '<Cmd>MultipleCursorsMouseAddDelete<CR>', {desc = 'Add or remove cursor'})
+
+			vim.keymap.set('x', '<Leader>m', '<Cmd>MultipleCursorsAddVisualArea<CR>', {desc = 'Add cursors to the lines of the visual area'})
+
+			vim.keymap.set({'n', 'x'}, '<Leader>a', '<Cmd>MultipleCursorsAddMatches<CR>', {desc = 'Add cursors to cword'})
+			vim.keymap.set({'n', 'x'}, '<Leader>A', '<Cmd>MultipleCursorsAddMatchesV<CR>', {desc = 'Add cursors to cword in previous area'})
+
+			vim.keymap.set({'n', 'x'}, '<Leader>d', '<Cmd>MultipleCursorsAddJumpNextMatch<CR>', {desc = 'Add cursor and jump to next cword'})
+			vim.keymap.set({'n', 'x'}, '<Leader>D', '<Cmd>MultipleCursorsJumpNextMatch<CR>', {desc = 'Jump to next cword'})
+
+			vim.keymap.set({'n', 'x'}, '<Leader>l', '<Cmd>MultipleCursorsLock<CR>', {desc = 'Lock virtual cursors'})
+		end
+	}
+	use 'nvimtools/hydra.nvim'
 end)
