@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
     }
     
     use 'rktjmp/lush.nvim'
-    use '~/AppData/Local/nvim/lushtheme'
+    use '~/.config/nvim/lushtheme'
 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
