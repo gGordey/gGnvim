@@ -10,11 +10,7 @@ vim.keymap.set("v", "<leader>p", "\"_dP")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
+vim.keymap.set("n", "<leader>s", function() vim.cmd("e ~/.local/share/nvim/SCRATCH") end, opt)
 
 vim.keymap.set("n", "<leader>lp", vim.cmd.Ex)
 
--- vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
--- 	callback = function()
--- 		vim.cmd("LspStop")
--- 	end
--- })

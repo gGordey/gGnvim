@@ -125,7 +125,7 @@ _G.packer_plugins = {
     url = "/home/ggordey/.config/nvim/lushtheme"
   },
   ["multiple-cursors.nvim"] = {
-    config = { "\27LJ\2\n©\n\0\0\a\0000\0_6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\0016\1\3\0009\1\4\0019\1\5\0015\3\6\0'\4\a\0'\5\b\0005\6\t\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\n\0'\4\v\0'\5\f\0005\6\r\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\14\0'\4\15\0'\5\f\0005\6\16\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\17\0'\4\18\0'\5\b\0005\6\19\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\20\0'\4\21\0'\5\22\0005\6\23\0B\1\5\0016\1\3\0009\1\4\0019\1\5\1'\3\24\0'\4\25\0'\5\26\0005\6\27\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\28\0'\4\29\0'\5\30\0005\6\31\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3 \0'\4!\0'\5\"\0005\6#\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3$\0'\4%\0'\5&\0005\6'\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3(\0'\4)\0'\5*\0005\6+\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3,\0'\4-\0'\5.\0005\6/\0B\1\5\1K\0\1\0\1\0\1\tdesc\25Lock virtual cursors!<Cmd>MultipleCursorsLock<CR>\14<Leader>l\1\3\0\0\6n\6x\1\0\1\tdesc\23Jump to next cword*<Cmd>MultipleCursorsJumpNextMatch<CR>\14<Leader>D\1\3\0\0\6n\6x\1\0\1\tdesc&Add cursor and jump to next cword-<Cmd>MultipleCursorsAddJumpNextMatch<CR>\14<Leader>d\1\3\0\0\6n\6x\1\0\1\tdesc*Add cursors to cword in previous area(<Cmd>MultipleCursorsAddMatchesV<CR>\14<Leader>A\1\3\0\0\6n\6x\1\0\1\tdesc\25Add cursors to cword'<Cmd>MultipleCursorsAddMatches<CR>\14<Leader>a\1\3\0\0\6n\6x\1\0\1\tdesc0Add cursors to the lines of the visual area*<Cmd>MultipleCursorsAddVisualArea<CR>\14<Leader>m\6x\1\0\1\tdesc\25Add or remove cursor+<Cmd>MultipleCursorsMouseAddDelete<CR>\18<C-LeftMouse>\1\3\0\0\6n\6i\1\0\1\tdesc\29Add cursor and move down\r<C-Down>\1\4\0\0\6n\6i\6x\1\0\1\tdesc\27Add cursor and move up\v<C-Up>\1\4\0\0\6n\6i\6x\1\0\1\tdesc\27Add cursor and move up\"<Cmd>MultipleCursorsAddUp<CR>\n<C-k>\1\3\0\0\6n\6x\1\0\1\tdesc\29Add cursor and move down$<Cmd>MultipleCursorsAddDown<CR>\n<C-j>\1\3\0\0\6n\6x\bset\vkeymap\bvim\nsetup\21multiple-cursors\frequire\0" },
+    config = { "\27LJ\2\n«\2\0\0\a\0\14\0\0236\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\0016\1\3\0009\1\4\0019\1\5\0015\3\6\0'\4\a\0'\5\b\0005\6\t\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\n\0'\4\v\0'\5\f\0005\6\r\0B\1\5\1K\0\1\0\1\0\1\tdesc\27Add cursor and move up\"<Cmd>MultipleCursorsAddUp<CR>\n<C-k>\1\3\0\0\6n\6x\1\0\1\tdesc\29Add cursor and move down$<Cmd>MultipleCursorsAddDown<CR>\n<C-j>\1\3\0\0\6n\6x\bset\vkeymap\bvim\nsetup\21multiple-cursors\frequire\0" },
     loaded = true,
     path = "/home/ggordey/.local/share/nvim/site/pack/packer/start/multiple-cursors.nvim",
     url = "https://github.com/brenton-leighton/multiple-cursors.nvim"
@@ -185,17 +185,17 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: scratch.nvim
-time([[Config for scratch.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fscratch\frequire\0", "config", "scratch.nvim")
-time([[Config for scratch.nvim]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\nQ\0\0\5\0\4\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0A\0\0\1K\0\1\0\20plugins.startup\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
+-- Config for: scratch.nvim
+time([[Config for scratch.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fscratch\frequire\0", "config", "scratch.nvim")
+time([[Config for scratch.nvim]], false)
 -- Config for: multiple-cursors.nvim
 time([[Config for multiple-cursors.nvim]], true)
-try_loadstring("\27LJ\2\n©\n\0\0\a\0000\0_6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\0016\1\3\0009\1\4\0019\1\5\0015\3\6\0'\4\a\0'\5\b\0005\6\t\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\n\0'\4\v\0'\5\f\0005\6\r\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\14\0'\4\15\0'\5\f\0005\6\16\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\17\0'\4\18\0'\5\b\0005\6\19\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\20\0'\4\21\0'\5\22\0005\6\23\0B\1\5\0016\1\3\0009\1\4\0019\1\5\1'\3\24\0'\4\25\0'\5\26\0005\6\27\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\28\0'\4\29\0'\5\30\0005\6\31\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3 \0'\4!\0'\5\"\0005\6#\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3$\0'\4%\0'\5&\0005\6'\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3(\0'\4)\0'\5*\0005\6+\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3,\0'\4-\0'\5.\0005\6/\0B\1\5\1K\0\1\0\1\0\1\tdesc\25Lock virtual cursors!<Cmd>MultipleCursorsLock<CR>\14<Leader>l\1\3\0\0\6n\6x\1\0\1\tdesc\23Jump to next cword*<Cmd>MultipleCursorsJumpNextMatch<CR>\14<Leader>D\1\3\0\0\6n\6x\1\0\1\tdesc&Add cursor and jump to next cword-<Cmd>MultipleCursorsAddJumpNextMatch<CR>\14<Leader>d\1\3\0\0\6n\6x\1\0\1\tdesc*Add cursors to cword in previous area(<Cmd>MultipleCursorsAddMatchesV<CR>\14<Leader>A\1\3\0\0\6n\6x\1\0\1\tdesc\25Add cursors to cword'<Cmd>MultipleCursorsAddMatches<CR>\14<Leader>a\1\3\0\0\6n\6x\1\0\1\tdesc0Add cursors to the lines of the visual area*<Cmd>MultipleCursorsAddVisualArea<CR>\14<Leader>m\6x\1\0\1\tdesc\25Add or remove cursor+<Cmd>MultipleCursorsMouseAddDelete<CR>\18<C-LeftMouse>\1\3\0\0\6n\6i\1\0\1\tdesc\29Add cursor and move down\r<C-Down>\1\4\0\0\6n\6i\6x\1\0\1\tdesc\27Add cursor and move up\v<C-Up>\1\4\0\0\6n\6i\6x\1\0\1\tdesc\27Add cursor and move up\"<Cmd>MultipleCursorsAddUp<CR>\n<C-k>\1\3\0\0\6n\6x\1\0\1\tdesc\29Add cursor and move down$<Cmd>MultipleCursorsAddDown<CR>\n<C-j>\1\3\0\0\6n\6x\bset\vkeymap\bvim\nsetup\21multiple-cursors\frequire\0", "config", "multiple-cursors.nvim")
+try_loadstring("\27LJ\2\n«\2\0\0\a\0\14\0\0236\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\0016\1\3\0009\1\4\0019\1\5\0015\3\6\0'\4\a\0'\5\b\0005\6\t\0B\1\5\0016\1\3\0009\1\4\0019\1\5\0015\3\n\0'\4\v\0'\5\f\0005\6\r\0B\1\5\1K\0\1\0\1\0\1\tdesc\27Add cursor and move up\"<Cmd>MultipleCursorsAddUp<CR>\n<C-k>\1\3\0\0\6n\6x\1\0\1\tdesc\29Add cursor and move down$<Cmd>MultipleCursorsAddDown<CR>\n<C-j>\1\3\0\0\6n\6x\bset\vkeymap\bvim\nsetup\21multiple-cursors\frequire\0", "config", "multiple-cursors.nvim")
 time([[Config for multiple-cursors.nvim]], false)
 
 _G._packer.inside_compile = false
